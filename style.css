@@ -1,0 +1,223 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilo do Cabeçalho */
+.header-banner {
+    position: relative;
+    height: 60vh; /* Ajuste a altura conforme desejado */
+    background-image: url('img/turismo-crajubar.png'); /* Substitua com o caminho correto da sua imagem */
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Estilo do Menu */
+nav {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para separar o menu do cabeçalho */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #555;
+    border-bottom: 2px solid #333;
+}
+
+nav ul li a.active {
+    color: #fff; /* Cor do texto quando ativo */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo para o item ativo */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 5px 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do link ativo */
+}
+
+
+/* Sessão Sobre o Turismo */
+#sobre-turismo {
+    padding: 2rem;
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+#sobre-turismo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#sobre-turismo p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+
+
+/* Estilos para Pontos Turísticos */
+#pontos-turisticos {
+    text-align: center;
+    padding: 2rem 1rem;
+    text-decoration: none; /* Remove o sublinhado ou qualquer estilo que possa indicar seleção */
+    color: inherit; /* Faz com que a cor do texto herde a cor padrão */
+    background: none; /* Remove qualquer fundo que possa indicar que está ativo */
+}
+
+#pontos-turisticos h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card-container .card h3 {
+    transition: text-shadow 0.3s ease; /* Transição suave para o efeito de sombra */
+}
+
+.card-container .card h3:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do link ativo */
+}
+
+.card {
+    width: 250px; /* Aumenta a largura do card */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-1 {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    width: 400px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 0.8rem 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Estilo para o Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+
+#localizacao-estatua {
+    text-align: center; /* Centraliza o texto da seção */
+}
+
+.location-container {
+    display: flex; /* Alinha os filhos em linha (horizontalmente) */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte, se necessário */
+    justify-content: center; /* Centraliza os itens no eixo horizontal */
+    align-items: center; /* Alinha os itens no eixo vertical */
+    margin: 20px 0; /* Adiciona margem superior e inferior */
+}
+
+.image-container {
+    margin: 0 10px; /* Espaço entre as imagens */
+    max-width: 45%; /* Limita a largura máxima das imagens */
+}
+
+.location-container p {
+    flex-basis: 100%; /* Faz o parágrafo ocupar a linha inteira */
+    text-align: center; /* Centraliza o texto do parágrafo */
+    margin-top: 10px; /* Espaço acima do parágrafo */
+}
+
+
+
+/* Responsividade para o Footer */
+@media (max-width: 768px) {
+    .footer-content .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+}

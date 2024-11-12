@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar - Estátua de Nossa Senhora de Fátima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html">CRATO</a></li>
+            <li><a href="juazeiro.html" class="active">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="j_pontos_religiosos.html" class="active">Pontos Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="j_pontos_turisticos.html">Pontos Turísticos</a></li>
+            <li><a href="j_restaurantes.html">Restaurantes</a></li>
+            <li><a href="j_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Santuário São Francisco das Chagas</h2>
+        <p>
+
+            O Santuário de São Francisco das Chagas, conhecido como a Igreja dos Franciscanos, foi benzido em 6 de janeiro de 1956, após seis anos da inauguração de sua pedra fundamental, em 6 de janeiro de 1950.
+            Fica localizado na Praça Monsenhor Joviniano Barreto e é um dos maiores templos dessa ordem no Brasil. O Santuário de São Francisco das Chagas também é sede da Paróquia do mesmo nome, confiada aos Frades Capuchinhos.
+            Seu teto possui citações de nomes de famílias que contribuíram de alguma maneira para a obra, que foi erguida em estilo lombardo-saxônico e na forma de Cruz Latina Dupla.
+        </p>
+        <p>
+            A imagem de São Francisco no altar-mor foi esculpida em Gênova, na Itália, e outra em um enorme pedestal é circundada pela Praça das Almas, que são passarelas suspensas como réplica à Praça de São Pedro no Vaticano. Sua torre de 45 metros de altura conta com um relógio e mais oito sinos que tocam trechos do Hino a São Francisco. O estilo do Santuário é o Romano Lombardo.
+            O Santuário de São Francisco das Chagas comporta cerca de 30 mil pessoas em época de romaria.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/franciscanos2.jpg" alt="Imagem 1">
+                <img src="img/franciscanos3.jpg" alt="Imagem 2">
+                <img src="img/franciscanos4.jpg" alt="Imagem 2">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>O Santuário São Francisco das Chagas está localizada no Juazeiro do Norte, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.257464501882!2d-39.3139282!3d-7.2114427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a178af68a1623f%3A0x16cc814bf571db54!2sSantu%C3%A1rio%20S%C3%A3o%20Francisco%20das%20Chagas!5e0!3m2!1spt-BR!2sbr!4v1730811101235!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

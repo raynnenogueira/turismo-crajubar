@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html" class="active">CRATO</a></li>
+            <li><a href="juazeiro.html" class="">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="pontos_religiosos.html" class="active">Pontos Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="pontos_turisticos.html">Pontos Turísticos</a></li>
+            <li><a href="restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Seminário Diocesano</h2>
+        <p>
+            A origem do Seminário São José começa pelo desejo do primeiro bispo do Ceará, Dom Luiz Antônio dos Santos (1861-1881), de fundar em Crato um educandário religioso. Para executar este sonho, Dom Luiz Antônio enviou em 1872 dois padres lazaristas, Guilherme e Antônio, que pregaram a necessidade deste projeto e recolheram donativos indispensáveis para a sua construção. Em agosto de 1874, Dom Luiz Antônio dos Santos autoriza o Pe. Enrile a iniciar a edificação do Seminário do Crato. A fim de acompanhar de perto os trabalhos o próprio Dom Luiz se desloca de Fortaleza e reside uma temporada em Crato. Em 7 de Março de 1875, ainda na fase de construção, o Bispo do Ceará colocou em funcionamento o Seminário São José, utilizando para tanto barracões de palha, enquanto se concluía a edificação do imponente edifício. Portanto a instalação do seminário se deu bem antes da criação da diocese do Crato, que só veio ocorrer 39 anos depois, em 20 de outubro de 1914. Ao longo de sua existência o Seminário São José foi fechado e reaberto várias vezes, devido ao fenômeno das secas, crises climáticas que assolaram o sertão nordestino.
+        </p>
+        <p>
+            A formação sacerdotal no Seminário São José de Crato é composta de três ciclos: o Ciclo Propedêutico, que funciona, na cidade de Crato, e é feito em um ano, conta com 14 alunos; na sede do Seminário São José funciona o Ciclo Filosófico, feito em três anos, contando com 25 seminaristas, e o Ciclo Teológico, feito em quatro anos, contando com 20 alunos, totalizando 45 seminaristas em 2017. Desses seminaristas, 10 são oriundos das Diocese de Iguatu (CE) e 1 dos Servos Congregação existente na Diocese. Como se conclui o Seminário São José de Crato funciona como um centro regional de formação de novos sacerdotes católicos.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/salesianos2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/" alt="Imagem 2">
+                <img src="img/" alt="Imagem 2">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        
+        <p>O Seminário Diocesano está localizada no Crato, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16212326.064066652!2d-49.9630806!3d-7.230869599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a18488e97c9849%3A0x38bfe44fc8acd8fc!2zU2VtaW7DoXJpbyBEaW9jZXNhbm8gU8OjbyBKb3PDqQ!5e0!3m2!1spt-BR!2sbr!4v1731522090370!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -367,19 +367,142 @@ footer {
     line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhorar a legibilidade */
 }
 
-
-/* Estilo da seção de Historiadores */
-#historiadores {
+/* Seção Inicial de Estatísticas, Definição e Locais */
+#estatisticas-historia {
     padding: 2rem;
-    background-color: #f0f0f0;
     text-align: center;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    background-color: rgba(192, 210, 229, 0.2); /* Azul com transparência */
+    overflow: hidden; /* Oculta o conteúdo que sai da área visível */
+    position: relative; /* Permite controle sobre o conteúdo interno */
 }
 
-#historiadores h2 {
+/* Container para os itens que será animado */
+#estatisticas-historia .estatisticas-container {
+    display: flex; /* Exibe os itens em linha */
+    transition: transform 0.5s ease-in-out; /* Suaviza a transição entre os movimentos */
+}
+
+/* Estilo dos itens de estatísticas */
+.estatistica-item {
+    width: 30%;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    flex-shrink: 0; /* Impede que os itens se encolham ao ocupar o espaço */
+}
+
+/* Efeito ao passar o mouse */
+.estatistica-item:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+}
+
+.estatistica-item h3 {
     font-size: 2rem;
     color: #333;
-    margin-bottom: 1.5rem;
 }
+
+.estatistica-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Estilo da seção de definição do historiador */
+#definicao-historiador {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f2f2f2; /* Cor de fundo suave */
+    border-radius: 8px;
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 8px rgba(89, 89, 89, 0.286);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse */
+#definicao-historiador:hover {
+    background-color: #e0e0e0; /* Cor de fundo mais escura */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4); /* Aumento da sombra */
+}
+
+
+/* Estilo da seção */
+#locais-visitacao {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f7f1e3; /* Tons de areia ou bege claro */
+}
+
+/* Contêiner dos locais */
+.locais-container {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os blocos */
+    justify-content: center; /* Centraliza os blocos horizontalmente */
+    flex-wrap: wrap; /* Permite que os blocos quebrem linha em telas menores */
+    margin-top: 1rem;
+}
+
+/* Estilo de cada bloco local-item */
+.local-item {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px; /* Define uma largura fixa */
+}
+
+/* Estilo da imagem dentro do bloco */
+.local-item img {
+    width: 100%;
+    height: 150px; /* Ajusta a altura */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+
+/* Estilo ao passar o mouse */
+.local-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do título do local */
+.local-item h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* Estilo do parágrafo */
+.local-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilo do link */
+.local-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.local-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
 
 .card-container {
     display: flex;

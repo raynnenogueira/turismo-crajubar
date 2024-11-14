@@ -115,6 +115,7 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
+    line-height: 1.0;
 }
 
 

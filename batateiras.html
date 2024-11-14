@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html" class="active">CRATO</a></li>
+            <li><a href="juazeiro.html" >JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="pontos_religiosos.html">Pontos Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="pontos_turisticos.html" class="active">Pontos Turísticos</a></li>
+            <li><a href="restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Geossítio Batateiras</h2>
+        <p>
+            Situado no Município de Crato, o Geossítio Batateiras está a aproximadamente 3km da sede administrativa do Geopark Araripe. Está localizado na área do Parque Estadual Sítio Fundão, cortado pelo rio Batateira e próximo à cascata do Lameiro. Sua nascente guarda histórias e lendas indígenas. O lugar é rodeado por trilhas ecológicas. Lá pode-se observar a existência de uma casa feita de taipa, ediﬁcação de barro batido e madeira, comum no Nordeste, com um primeiro andar, sendo a única casa do Brasil registrada neste modelo de construção. O local também possui ruínas de um engenho de cana-de-açúcar construído por volta de 1880.
+        </p>
+        <p>
+            As fontes presentes no geossítio, nas últimas décadas, tornaram-se balneários e áreas de lazer da comunidade. O sítio é um dos lugares mais afamados do município do Crato, já que daí oriunda a “lenda da pedra da Batateira”, um dos mitos fundantes da cidade, que remonta a presença indígena. Diz uma das versões que a Chapada do Araripe era entrada para um lago encantado, cujo único acesso estava segurado pela Pedra da Batateira. Assim que este lugar fosse profanado, a água, jorrando, iria inundar todo o Vale do Cariri e matar a sua população inteira. Neste tipo de narrativa há elementos indígenas que constam da existência de “serpentes” e “mães de água” e de forças encantadas, e também elementos de narrativas cristãs como a ideia do Dilúvio e do Apocalipse.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/colina2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/.jpg" alt="Imagem 2">
+                <img src="img/.jpg" alt="Imagem 2">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>O Geossítio Batateiras está localizado no Crato, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0600298686504!2d-39.4343628253767!3d-7.233993692772157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a184f0356da837%3A0x50edb5e12b705c3b!2sGeoss%C3%ADtio%20Batateiras%20-%20S%C3%ADtio%20Fund%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1731595203010!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

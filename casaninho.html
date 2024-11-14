@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html" class="active">CRATO</a></li>
+            <li><a href="juazeiro.html" >JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="pontos_religiosos.html">Pontos Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="pontos_turisticos.html" class="active">Pontos Turísticos</a></li>
+            <li><a href="restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Casa Ninho</h2>
+        <p>
+            O Ponto de Cultura Casa Ninho é um aparelho cultural alternativo localizado no centro do Crato, interior do Ceará. Nasceu em 2011, como sede do Grupo Ninho de Teatro, e em 2017 passou a abrigar e ser administrada também pelo Coletivo Atuantes em Cena. Desde a sua abertura, a Casa promove e recepciona cotidianamente espetáculos, oficinas, mostras de artes, exibições de filmes e documentários, lançamentos de livros, reuniões, ensaios e eventos culturais diversos, configurando-se como um dos principais equipamentos de difusão e fruição cultural da região, apoiando artistas e grupos locais e de todas as regiões do país.Em 2020, a Casa Ninho recebeu da Secretaria de Cultura do Estado do Ceará a certificação de Ponto de Cultura, pela sua contribuição no acesso, proteção e promoção dos direitos, da cidadania e da diversidade cultural no Estado.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/colina2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/.jpg" alt="Imagem 2">
+                <img src="img/.jpg" alt="Imagem 2">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>A Casa Ninho está localizado no Crato, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0633478302975!2d-39.41151662537662!3d-7.233615292772562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1848406538045%3A0x78213feecc2c67de!2sCasa%20Ninho%20de%20Teatro!5e0!3m2!1spt-BR!2sbr!4v1731595473215!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

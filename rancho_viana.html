@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html">CRATO</a></li>
+            <li><a href="juazeiro.html" class="">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html" class="active">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="b_pontos_religiosos.html">Pontos Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="b_pontos_turisticos.html" class="">Pontos Turísticos</a></li>
+            <li><a href="b_restaurantes.html" class="active">Restaurantes e Bares</a></li>
+            <li><a href="b_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Rancho Viana</h2>
+        <p>
+            Lugar aconchegante, com um cardápio variado de comidas e bebidas e excelente atendimento. A música ambiente e, às vezes, música ao vivo, tornam a experiência ainda mais especial. Ideal para momentos agradáveis com amigos ou família. 
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/rancho_viana_01.jpg" alt="Imagem 1" style="object-fit: cover;">
+                <img src="img/rancho_viana_02.jpg" alt="Imagem 1">
+                <img src="img/rancho_viana_03.jpg" alt="Imagem 1">
+                <img src="img/rancho_viana_04.jpg" alt="Imagem 1">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>O Rancho Viana está localizada em Barbalha, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3501923945496!2d-39.30501982537582!3d-7.314500092693485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a177d50aa57d17%3A0xacff03caa3544e79!2sRANCHO%20VIANA%2C580!5e0!3m2!1spt-BR!2sbr!4v1731770192018!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

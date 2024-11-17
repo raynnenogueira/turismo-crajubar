@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html" class="active">CRATO</a></li>
+            <li><a href="juazeiro.html" >JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Museu Regional do Cariri</h2>
+        <p>
+            O local tem objetos que remontam aos habitantes indígenas Kariris, tais como machados, urna funerária, mãos de pilão, armamentos para corte, dentre outros que foram encontrados durante o processo da reforma da Praça da Sé que precisou ser escavada. Outros documentos que contam parte da História do Cangaço  podem ser vistos por lá.
+            Localizado na Rua Senador Pompeu, no entorno da Praça da Sé, o Museu está com suas estruturas bem comprometidas, o que explica está fechado para visitas. É preciso um trabalho em equipe envolvendo profissionais de várias áreas para que o processo de restauração deste importante espaço da memória e da História cearense não seja destruído. As aulas de História do Cariri, principalmente, precisam dele.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/muserucariri-crato.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/muserucariri-crato2.jpg" alt="Imagem 2" loading="lazy">
+                <img src="img/muserucariri-crato3.jpg" alt="Imagem 2" style="object-fit: contain;">
+                <img src="img/muserucariri-crato4.jpg" alt="Imagem 2"  style="object-fit: contain;">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>O Museu Regional do Cariri está localizada no Crato, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7916.117478101033!2d-39.42174390642089!3d-7.234140899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a18485b972fb1f%3A0xe0a504983c6494ea!2sMuseu%20Historico%20Do%20Crato!5e0!3m2!1spt-BR!2sbr!4v1731868435150!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

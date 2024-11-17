@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo Crajubar - Estátua de Santo Antônio</title>
+    <title>Turismo Crajubar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,8 +17,18 @@
         <ul>
             <li><a href="index.html">INÍCIO</a></li>
             <li><a href="crato.html">CRATO</a></li>
-            <li><a href="juazeiro.html">JUAZEIRO DO NORTE</a></li>
-            <li><a href="barbalha.html">BARBALHA</a></li>
+            <li><a href="juazeiro.html" class="">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html" class="active">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="b_pontos_religiosos.html">Pontos Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="b_pontos_turisticos.html" class="active">Pontos Turísticos</a></li>
+            <li><a href="b_restaurantes.html" class="">Restaurantes e Bares</a></li>
+            <li><a href="b_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
         </ul>
     </nav>
 
@@ -26,26 +36,29 @@
     <section id="sobre-turismo">
         <h2>Estátua de Santo Antônio</h2>
         <p>
-            A Estátua de Santo Antônio está localizada em Barbalha, Ceará, e é um dos principais pontos de devoção na região. Santo Antônio, conhecido como o santo casamenteiro, atrai muitos visitantes que vêm em busca de bênçãos e milagres.
-        </p>
-        <p>
-            A estátua, imponente e cheia de detalhes, foi inaugurada em 1986 e se tornou um símbolo da cidade. O local é frequentemente visitado por fiéis e turistas que buscam espiritualidade e uma conexão mais profunda com a fé.
+            Escultura do padroeiro da terra dos Verdes Canaviais se torna o terceiro maior monumento religioso do Ceará. Com a promessa de ofertar mais um atrativo ao turismo religioso, foi entregue nesta sexta-feira, 1º, a estátua de Santo Antônio, em Barbalha, onde foram investidos R$ 2,3 milhões.
+
+            A escultura alcança 30 metros de altura e se torna o terceiro maior monumento religioso do Ceará — superando a estátua do Padre Cícero, em Juazeiro do Norte, e ficando atrás apenas das estátuas de Nossa Senhora de Fátima, em Crato, e de São Francisco da Chagas, em Canindé.
+
+            A perspectiva é que este novo equipamento público incremente o polo turístico das três principais cidades da região do Cariri: Juazeiro do Norte, Crato e Barbalha. Apostas que já aconteceram no teleférico do Caldas, inaugurado na terra de Santo Antônio no ano passado; e no teleférico do Horto, entregue na última segunda-feira (28).
         </p>
     </section>
 
     <!-- Localização da Estátua -->
     <section id="localizacao-estatua">
-        <h2>Sua Localização</h2>
-        <div class="location-container">
-            <div class="image-container">
-                <img src="img/estatua_santo_antonio.jpg" alt="Estátua de Santo Antônio" style="max-width: 100%; height: auto;">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/santoantonio2.webp" alt="Imagem 1" style="object-fit: contain;"> 
+                <img src="img/santoantonio4.jpg" alt="Imagem 1" style="object-fit: contain;"> 
+                <img src="img/santoantonio3.jpg" alt="Imagem 1"> 
+ 
             </div>
-            <div class="image-container">
-                <img src="img/estatua_santo_antonio2.jpg" alt="Descrição da Segunda Imagem" style="max-width: 100%; height: auto;">
-            </div>
-            <p>A Estátua de Santo Antônio está localizada em Barbalha, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3693802280077!2d-39.29783952537591!3d-7.3123354926955955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1772e1fa2b869%3A0xaed2667eb706c3e7!2sEstatua%20de%20Santo%20Antonio!5e0!3m2!1spt-BR!2sbr!4v1730740342811!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
         </div>
+        <p>A Estátua de Santo Antônio está localizada em Barbalha, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3693803949427!2d-39.30013552353263!3d-7.312335473861707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1772e1fa2b869%3A0xaed2667eb706c3e7!2sEstatua%20de%20Santo%20Antonio!5e0!3m2!1spt-BR!2sbr!4v1731874196679!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer>
@@ -53,5 +66,7 @@
             <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
         </div>
     </footer>    
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html">CRATO</a></li>
+            <li><a href="juazeiro.html" class="">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html" class="active">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="b_hoteis_e_pousadas.html">Pontos Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="b_pontos_turisticos.html" >Pontos Turísticos</a></li>
+            <li><a href="b_restaurantes.html">Restaurantes</a></li>
+            <li><a href="b_hoteis_e_pousadas.html" class="active">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Hotel e Chalés das Fontes</h2>
+        <p>
+            O Hotel das Fontes oferece a seus hóspedes várias comodidades nos quartos, como TV de tela plana, minibar e ar-condicionado. Além disso, acessar a internet é possível com o wi-fi gratuito disponível.
+
+            O hotel de pequeno porte conta com concierge, para tornar a sua estadia ainda mais agradável. Depois de se divertir com a piscina externa, peça algo para comer no restaurante ou relaxe com uma bebida no bar/lounge. O local ainda dispõe de uma piscina infantil e um jardim.
+
+         </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/chalefontes2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/chalefontes3.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/chalefontes4.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/chalefontes5.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/chalefontes6.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/chalefontes7.jpg" alt="Imagem 1" style="object-fit: contain;">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>O Hotel e Chalés das Fontes está localizada em Barbalha, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.787992480114!2d-39.35026922537506!3d-7.377642092631802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a19fb47f637591%3A0x322166cd8944e1ea!2sHotel%20das%20Fontes!5e0!3m2!1spt-BR!2sbr!4v1731951725548!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

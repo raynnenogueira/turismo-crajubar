@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html" class="active">CRATO</a></li>
+            <li><a href="juazeiro.html" >JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="pontos_religiosos.html">Pontos Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="pontos_turisticos.html" class="active">Pontos Turísticos</a></li>
+            <li><a href="restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Festival Expocrato</h2>
+        <p>
+            Expocrato, oficialmente Exposição Centro Nordestina de Animais e Produtos Derivados, é o maior evento agropecuário do norte-nordeste, com nove dias de duração, realizado anualmente, no mês de julho, no Parque de Exposição Pedro Felício Cavalcanti, na cidade do Crato (Ceará). Constitui-se basicamente de uma feira agropecuária, com desfile e leilão de animais. Durante o evento, são vendidas bebidas e comidas típicas e apresentados espetáculos musicais.
+        </p>
+        <p>
+            No dia 21 de junho de 1944 foi lançada a 1ª Exposição Agropecuária do Crato pela portaria 100/1944, nomeando como patrono e presidente o professor Pedro Felício Cavalcanti, e criando a primeira Comissão Central Organizadora do evento. Os então organizadores foram à exposição de Uberaba (MG) para trazer um comboio de animais. A Comissão comprou um vagão de animais de raça que saiu de trem para o Rio de Janeiro, de lá veio de navio até Fortaleza e chegou ao Crato de trem. Em meados de setembro do mesmo ano é distribuído entre os criadores da região do Cariri o regulamento da I Exposição Agropecuária do Nordeste, apenas dois meses antes da realização do primeiro evento no Crato, que, naquela época, recebeu a denominação regional.
+        </p>
+        <p>
+            Com a reforma do Parque de Exposições Pedro Felício Cavalcanti em 2018, novos stands serão instalados, além dos dormitórios para criadores, novo espaço de julgamento, museu da Expocrato, novos sanitários, novos pavilhões de animais, praça de alimentação, restaurantes e uma nova avenida que contorna o parque. Durante os oito dias de Expocrato, são esperados em média 700 mil pessoas no parque de exposições, sendo grande parte de outras regiões do Brasil e do mundo.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/expocrato2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/expocrato3.jpeg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/expocrato4.jpeg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/expocrato5.jpeg" alt="Imagem 1" style="object-fit: contain;">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>O Parque de Exposição Pedro Felício Cavalcante está localizado no Crato, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.022024848076!2d-39.41314171893479!3d-7.238326606963108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1856381ab3657%3A0x298e6fe5346dc713!2sParque%20de%20Exposi%C3%A7%C3%A3o%20Pedro%20Fel%C3%ADcio%20Cavalcante!5e0!3m2!1spt-BR!2sbr!4v1732023763652!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

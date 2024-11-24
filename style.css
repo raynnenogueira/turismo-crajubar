@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 
 
 body {
-    font-family: "Sour Gummy", sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f7f1e3; /* Tons de areia ou bege claro */
@@ -19,10 +19,16 @@ body {
 /* Estilo do Cabeçalho */
 .header-banner {
     position: relative;
-    height: 60vh; /* Ajuste a altura conforme desejado */
-    background-image: url('img/turismo-crajubar.png'); /* Substitua com o caminho correto da sua imagem */
-    background-size: cover;
-    background-position: center;
+    height: 300px;
+    background: url('banner-crato.jpg') no-repeat center center/cover;
+}
+
+.header-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -39,10 +45,12 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -513,6 +521,7 @@ footer {
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 60%; /* Reduz a largura do fundo branco */
 }
 
 .depoimento-container {
@@ -691,25 +700,120 @@ footer {
 
 
 
-/* Responsividade para o Footer */
-@media (max-width: 768px) {
-    .footer-content .social-links {
-        flex-direction: column;
-        gap: 0.5rem;
+/* Estilo responsivo para celulares */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        padding: 0 1rem; /* Adiciona espaçamento interno */
+    }
+
+    .header-banner {
+        height: 40vh; /* Reduz a altura do banner para caber melhor em telas pequenas */
+        background-position: top; /* Ajusta o foco da imagem */
+    }
+
+    nav ul {
+        flex-direction: column; /* Empilha os itens do menu */
+        gap: 10px; /* Espaçamento entre os itens */
+    }
+
+    nav ul li {
+        margin: 0; /* Remove a margem horizontal */
+    }
+
+    .carousel-container {
+        width: 100%; /* Garante que o carrossel ocupe toda a largura da tela */
+    }
+
+    .card-container {
+        flex-direction: column; /* Alinha os cartões em uma coluna */
+        gap: 1rem; /* Ajusta o espaçamento entre os cartões */
+    }
+
+    .card {
+        width: 100%; /* Faz os cartões ocuparem toda a largura disponível */
+    }
+
+    #sobre-turismo, #sobre-site, #estatisticas-historia, #definicao-historiador, #locais-visitacao {
+        padding: 1rem; /* Reduz o espaçamento interno */
+        text-align: justify; /* Mantém o alinhamento para leitura */
+    }
+
+    .local-item {
+        width: 100%; /* Faz cada item ocupar toda a largura disponível */
+    }
+
+    .menu-link {
+        font-size: 1rem; /* Ajusta o tamanho da fonte do menu */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Reduz o tamanho do texto no rodapé */
     }
 }
 
-/* Responsividade */
+
+/* Media Query para telas menores */
 @media (max-width: 768px) {
+    .header-banner {
+        height: 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
     .card-container {
         flex-direction: column;
         align-items: center;
     }
+
+    .card-1 {
+        flex: 1 1 90%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
 }
 
-/* Responsividade */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header-banner {
+        height: 150px;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+
+    .card-1 {
+        margin: 10px 0;
+    }
+}
+
+
+/* Ajuste para dispositivos menores */
 @media (max-width: 768px) {
-    nav ul li {
-        margin: 0 10px;
+    iframe {
+        width: 100%; /* Ocupará toda a largura disponível */
+        height: 300px; /* Reduz a altura */
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        width: 100%; /* Permanece 100% da largura */
+        height: 250px; /* Altura ainda menor para dispositivos muito pequenos */
     }
 }

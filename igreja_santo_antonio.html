@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html">CRATO</a></li>
+            <li><a href="juazeiro.html">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html" class="active">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="b_pontos_religiosos.html" class="active">Locais Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="b_pontos_turisticos.html">Locais Turísticos</a></li>
+            <li><a href="b_restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="b_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Igreja de Santo Antônio</h2>
+        <p>
+            A Igreja Matriz de Santo Antônio, localizada no Centro Histórico de Barbalha, é um dos principais marcos religiosos e turísticos da região do Cariri. Além de sua notável beleza arquitetônica, a igreja é o palco central da tradicional Festa de Santo Antônio e abriga o famoso Pau da Bandeira, atraindo visitantes durante todo o ano. Construída na colina mais alta do distrito, às margens do riacho Salamanca, seus alicerces foram feitos em 1785, e a capela foi concluída após cinco anos, tornando-se paróquia em 1838. Inicialmente erguida como símbolo de fé e organização por Francisco Magalhães Barreto e Sá e sua esposa, a igreja consolidou-se como o coração da antiga freguesia e passou por mudanças urbanas ao longo do tempo. Foi registrada fotograficamente em 1946 para o inventário arquitetônico do Ceará.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/igreja-santo-Antonio-5" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/igreja-santo-Antonio-6.webp" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/igreja-santo-Antonio-1.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/igreja-santo-Antonio-2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/igreja-santo-antonio-3.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/igreja-santo-antonio-4.jpg" alt="Imagem 1" style="object-fit: contain;">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>A Igreja de Santo Antônio está localizada em Barbalha, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4146735619324!2d-39.30912112353288!3d-7.307223373879586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a177cb76a47e45%3A0x16b982a5bb3c1770!2sIgreja%20Matriz%20de%20Santo%20Ant%C3%B4nio!5e0!3m2!1spt-BR!2sbr!4v1732371595035!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

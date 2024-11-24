@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html">CRATO</a></li>
+            <li><a href="juazeiro.html">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html" class="active">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav>
+        <ul>
+            <li><a href="b_pontos_religiosos.html" class="active">Locais Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="b_pontos_turisticos.html">Locais Turísticos</a></li>
+            <li><a href="b_restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="b_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Paróquia São Vicente de Paulo</h2>
+        <p>
+            Desde 2007, a Paróquia de São Vicente de Paulo, no Bairro Alto da Alegria, em Barbalha, celebra sua elevação a paróquia, ocorrida em 30 de dezembro, após se desmembrar da matriz de Santo Antônio. Em comemoração ao aniversário, os fiéis das 13 comunidades da paróquia se reuniram para uma missa em ação de graças presidida por Dom Gilberto Pastana, bispo diocesano, e concelebrada pelos padres Francisco Marques e João Fernando. Entre os projetos das comunidades, destaca-se a horta comunitária do distrito de Estrela, que proporciona alimentos e sustento às famílias. Como gesto de gratidão pelos três anos de Dom Gilberto na Diocese de Crato, a comunidade ofereceu ao bispo alimentos cultivados localmente.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/sao-vicente2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/sao-vicente3.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/sao-vicente4.jpg" alt="Imagem 1" style="object-fit: contain;">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>A Paróquia São Vicente de Paulo está localizada em Barbalha, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4052396.878404978!2d-39.29592761329234!3d-7.306754458930588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a177b46a5eb2c3%3A0x622268f265258a3c!2sIgreja%20de%20S%C3%A3o%20Vicente%20de%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1732372036920!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

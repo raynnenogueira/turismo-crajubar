@@ -33,6 +33,7 @@ function setupNavigationButtons() {
     nextButton.addEventListener('click', () => changeSlide(1));
 }
 
+
 // Inicializa o carrossel e os botões de navegação ao carregar a página
 window.onload = () => {
     startAutoSlide();

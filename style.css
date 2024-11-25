@@ -244,6 +244,185 @@ nav ul li a.active {
 }
 
 
+@media (max-width: 768px) {
+    /* Centraliza os vídeos dentro de seu contêiner */
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-1 {
+        max-width: 100%; /* Faz o vídeo ocupar 100% da largura do seu contêiner */
+        text-align: center; /* Alinha o conteúdo dentro do card */
+    }
+
+    video {
+        display: block; /* Faz o vídeo ser exibido como bloco */
+        margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+    }
+}
+
+
+
+/* Container da seção de depoimentos */
+.depoimentos-container {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 30px;
+}
+
+/* Estilo do título */
+.depoimentos-container h2 {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo para a seção de depoimentos */
+.depoimentos {
+    display: flex;
+    flex-wrap: nowrap; /* Impede quebra de linha */
+    justify-content: space-between; /* Espaço igual entre os elementos */
+    gap: 20px; /* Espaçamento entre os depoimentos */
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Estilo dos depoimentos */
+.depoimento {
+    flex: 1; /* Define largura flexível para os elementos */
+    text-align: center;
+    background-color: #f9f9f9; /* Fundo leve para destaque */
+    border: 1px solid #ddd; /* Bordas para definição */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.depoimento:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+/* Estilo das imagens quadradas */
+.foto-quadrada {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px; /* Bordas arredondadas */
+    object-fit: cover; /* Faz a imagem cobrir o quadrado */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Estilo do nome */
+.depoimento h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Estilo do texto */
+.depoimento p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilo para a imagem e texto do novo depoimento extra */
+.depoimento-extra {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #f9f9f9; /* Fundo leve para destaque */
+    padding: 20px;
+    border: 1px solid #ddd; /* Bordas para definição */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.depoimento-extra:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+.depoimento-extra img {
+    width: 150px; /* Tamanho fixo para a foto */
+    height: 150px; /* Mantém a altura igual à largura */
+    object-fit: cover; /* Garante que a imagem se ajuste ao quadrado */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.depoimento-extra h3 {
+    font-size: 1.5em; /* Tamanho do título */
+    margin-top: 10px;
+    color: #333;
+}
+
+.depoimento-extra p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Ajuste no tamanho da foto e do texto em telas menores */
+    .depoimento-extra img {
+        width: 120px; /* Foto menor em telas pequenas */
+        height: 120px;
+    }
+
+    .depoimento-extra h3 {
+        font-size: 1.2em; /* Ajuste do tamanho do título */
+    }
+
+    .depoimento-extra p {
+        font-size: 0.9em; /* Ajuste do tamanho do texto */
+    }
+
+    .depoimento-extra {
+        padding: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Em dispositivos muito pequenos (como smartphones em modo retrato) */
+    .depoimento-extra {
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .depoimento-extra img {
+        width: 100px; /* Tamanho ainda menor */
+        height: 100px;
+    }
+
+    .depoimento-extra h3 {
+        font-size: 1.1em; /* Menor ainda em telas menores */
+    }
+
+    .depoimento-extra p {
+        font-size: 0.8em; /* Texto mais compacto */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .depoimentos {
+        flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+        justify-content: center;
+    }
+
+    .depoimento {
+        flex: 0 1 calc(50% - 20px); /* Ajusta a largura para caber dois por linha */
+        margin-bottom: 20px; /* Espaçamento entre linhas */
+    }
+}
+
+
+
 /* Estilo para o Footer */
 footer {
     background-color: #333;

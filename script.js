@@ -40,3 +40,13 @@ window.onload = () => {
     setupNavigationButtons();
 };
 
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.toggle-menu');
+    const menuList = document.querySelector('.menu-secundario ul');
+
+    toggleButton.addEventListener('click', () => {
+        // Alterna entre as classes 'hidden' e 'visible'
+        menuList.classList.toggle('hidden');
+        menuList.classList.toggle('visible');
+    });
+});

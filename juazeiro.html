@@ -26,7 +26,7 @@
     </nav>
 
     <!-- Menu de Navegação Específico do Juazeiro -->
-    <nav>
+    <nav class="menu-navegacao-principal">
         <ul>
             <li><a href="j_pontos_religiosos.html">Locais Religiosos</a></li>
             <li><a href="j_pontos_turisticos.html">Locais Turísticos</a></li>
@@ -34,9 +34,18 @@
             <li><a href="j_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
         </ul>
     </nav>
-</body>
-</html>
 
+    
+    <!-- Menu de Navegação Específico do Juazeiro -->
+    <nav class="menu-secundario">
+        <button class="toggle-menu">Categorias</button>
+        <ul class="hidden">
+            <li><a href="j_pontos_religiosos.html">Locais Religiosos</a></li>
+            <li><a href="j_pontos_turisticos.html">Locais Turísticos</a></li>
+            <li><a href="j_restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="j_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
 
     <!-- Sessão Sobre o Turismo -->
     <section id="sobre-turismo">
@@ -114,36 +123,43 @@
             <section class="depoimentos-container">
                 <h2>Depoimentos de alguns Romeiros</h2>
                 <section class="depoimentos">
-                    <div class="depoimento">
+                    <div class="depoiimento">
                         <img src="img/dona-luziana1.jpeg" alt="João Silva" class="foto-quadrada">
                         <h3>Dona Luziana</h3>
                         <p>"Dona Luziana, 76 anos, Segunda Romaria, Mora em Ibura um bairro de Recife, Segunda Romeida, Está a passeio"</p>
                     </div>
-                    <div class="depoimento">
+                    <div class="depoiimento">
                         <img src="img/dona-nice1.jpeg" alt="Maria Oliveira" class="foto-quadrada">
                         <h3>Dona Nice</h3>
                         <p>"Dona Nice, 53 anos, Santa Cruz do Capibaribe - Pernambuco, 3 passeio, Promessa feita pela mãe para ela e alcançada. Ao Padre Cícero, Problema na perna"</p>
                     </div>
-                    <div class="depoimento">
+                    <div class="depoiimento">
                         <img src="img/seu-hernandez.jpeg" alt="Carlos Lima" class="foto-quadrada">
                         <h3>Seu Hernandes</h3>
                         <p>"Seu Hernandes, 79 anos, Goiana Recife, 40 anos de Romaria, Duas promessas feitas e alcançada."</p>
                     </div>
-                    <div class="depoimento">
+                    <div class="depoiimento">
                         <img src="img/seu-joao.jpeg" alt="Seu João" class="foto-quadrada">
                         <h3>Seu João</h3>
                         <p>"Seu João, 85 anos, 30 anos de Romaria, Santa Cruz do Capibaribe, Várias promessas feitas e alcançadas.."</p>
                     </div>
+                    <div class="depoiimento">
+                        <img src="img/dona-maria-lourdes.jpeg" alt="Seu João" class="foto-quadrada">
+                        <h3>Dona Maria Lourdes</h3>
+                        <p>"Dona Maria Lourdes, 77 anos, Bairro Pedra Recife, 40 anos de Romaria 
+                            Primeira promessa para o filho de 8 anos, tinha pneumonia aguda e foi alcançada ao Padre Cícero, Segunda promessa para o sobrinho, acidente de moto, teve traumatisio craniano e quebrou o braço, nessa vinda agora pagou essa promessa. Trazendo um braço e uma cabeça de madeira, deixando na casa do Padre Cícero. O museu vivo."</p>
+                    </div>
                 </section>
             </section>
 
-            <!-- Novo depoimento fora da seção, cobrindo toda a largura -->
+            <!-- Novo depoimento fora da seção, cobrindo toda a largura 
             <section class="depoimento-extra">
                 <img src="img/dona-maria-lourdes.jpeg" alt="Maria Souza" class="foto-quadrada">
                 <h3>Maria Souza</h3>
                 <p>"Dona Maria Lourdes, 77 anos, Bairro Pedra Recife, 40 anos de Romaria 
                     Primeira promessa para o filho de 8 anos, tinha pneumonia aguda e foi alcançada ao Padre Cícero, Segunda promessa para o sobrinho, acidente de moto, teve traumatisio craniano e quebrou o braço, nessa vinda agora pagou essa promessa. Trazendo um braço e uma cabeça de madeira, deixando na casa do Padre Cícero. O museu vivo."</p>
             </section>
+            -->
             
 
             <section>
@@ -152,12 +168,13 @@
             </section>
         </section>
             
-
     
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

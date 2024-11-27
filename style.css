@@ -555,25 +555,131 @@ nav ul li a.active {
 }
 
 
-
-/* Estilo para o Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1.5rem 0;
+#guia-turistico {
+    margin: 2rem auto;
     text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Certifica que a largura é 100% da tela */
+    max-width: 800px; /* Limita a largura máxima */
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+#guia-turistico h2 {
+    font-size: 1.8rem; /* Ajusta o tamanho para telas menores */
+    margin-bottom: 1.5rem;
+    color: #333;
 }
 
-.footer-content p {
-    margin: 0.5rem 0;
+#guia-turistico p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
     font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
+
+.guia-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-decoration: none;
+    color: #555;
+}
+
+/* Estilo do link */
+.local-item a {
+    text-decoration: none;
+    color: #555;
+}
+
+.local-item a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+.guia-item {
+    width: 100%; /* Faz com que cada item ocupe a largura total em telas pequenas */
+    max-width: 300px; /* Limita o tamanho máximo de cada item */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guia-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.guia-img {
+    width: 100%; /* A imagem ocupa a largura disponível */
+    height: auto; /* Ajusta a altura da imagem de acordo com a largura */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.guia-item h4 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.guia-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.guia-item a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.guia-item a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+
+/* Estilização para tablets */
+@media (max-width: 768px) {
+    .guia-item {
+        flex: 1 1 calc(50% - 1.5rem); /* Dois itens por linha em tablets */
+    }
+}
+
+/* Estilização para celulares */
+@media (max-width: 480px) {
+    #guia-turistico {
+        padding: 1rem; /* Reduz o padding em telas pequenas */
+    }
+
+    .guia-item {
+        flex: 1 1 100%; /* Um item por linha em celulares */
+        max-width: 100%; /* Tira o limite máximo de largura para que ocupe toda a tela */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .guia-img {
+        width: 80%; /* Ajusta o tamanho das imagens */
+        height: auto;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Ajusta o tamanho do título */
+    }
+
+    p {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+}
+
 
 
 
@@ -581,12 +687,21 @@ footer {
 #desenvolvedores {
     text-align: center;
     padding: 40px;
-    background-color: #f9f9f9;
 }
 
 #desenvolvedores-link {
     text-align: center; /* Centraliza o conteúdo de texto */
     margin-top: 20px; /* Dá um espaçamento superior para separar da seção anterior */
+}
+
+
+#desenvolvedores p {
+    text-align: justify; /* Justifica o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+    max-width: 800px; /* Define uma largura máxima */
+    color: #555; /* Cor semelhante ao padrão */
+    font-size: 1rem; /* Ajuste do tamanho da fonte */
 }
 
 #desenvolvedores-link a {
@@ -682,6 +797,46 @@ footer {
         font-size: 0.7rem;
     }
 }
+
+
+/* Estilo para o Footer */
+/* Estilo para o Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0; /* Diminuir o padding vertical */
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 100%; /* Garantir que o conteúdo ocupe toda a largura possível */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem; /* Diminuir o tamanho da fonte para dispositivos móveis */
+    color: #fff;
+}
+
+/* Estilo para telas menores (responsividade) */
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 1rem 0; /* Ajuste de padding em telas pequenas */
+    }
+
+    .footer-content p {
+        font-size: 0.85rem; /* Fonte ainda menor em dispositivos muito pequenos */
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -799,6 +954,13 @@ footer {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    #sobre-site h2 {
+        text-align: left;
+        padding-left: 1rem;
+    }
+}
+
 #sobre-site p {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -910,6 +1072,11 @@ footer {
     border-radius: 8px 8px 0 0;
 }
 
+.local-item a {
+    text-decoration: none;
+    color: #007bff;
+
+}
 
 /* Estilo ao passar o mouse */
 .local-item:hover {
@@ -933,23 +1100,23 @@ footer {
 /* Estilo do link */
 .local-item a {
     text-decoration: none;
-    color: #007bff;
+    color: #555;
 }
 
 .local-item a:hover {
-    color: #0056b3;
+    color: #555;
     text-decoration: underline;
 }
-
 
 #depoimento-romeiro {
     margin: 2rem auto;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    max-width: 60%; /* Reduz a largura do fundo branco */
+    max-width: 90%;
+    width: 100%;
 }
 
 .depoimento-container {
@@ -970,21 +1137,34 @@ footer {
 
 .texto-romeiro {
     max-width: 600px;
-    text-align: left;
+    text-align: center;
 }
 
 .texto-romeiro .depoimento {
-    font-size: 1.2rem;
-    font-style: italic;
+    font-size: 1rem;
+    font-style: normal;
     color: #555;
     margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
-.texto-romeiro .nome-romeiro {
-    font-weight: bold;
-    color: #333;
-    text-align: right;
+/* Responsividade adicional */
+@media (min-width: 768px) {
+    #depoimento-romeiro {
+        max-width: 60%;
+    }
+
+    .foto-romeiro img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .texto-romeiro .depoimento {
+        font-size: 1.2rem;
+    }
 }
+
+
 
 
 
@@ -1027,21 +1207,6 @@ footer {
 .card p {
     font-size: 1rem;
     color: #555;
-}
-
-.btn-leia-mais {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.btn-leia-mais:hover {
-    background-color: #0056b3;
 }
 
 
@@ -1173,10 +1338,6 @@ footer {
 
     .menu-link {
         font-size: 1rem; /* Ajusta o tamanho da fonte do menu */
-    }
-
-    footer {
-        font-size: 0.9rem; /* Reduz o tamanho do texto no rodapé */
     }
 }
 

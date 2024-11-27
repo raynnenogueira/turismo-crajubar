@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Turismo Crajubar</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,7 +35,8 @@
         </ul>
     </nav>
 
-    <!-- Menu de Navegação Específico do Crato -->
+
+     <!-- Menu de Navegação Específico do Crato -->
     <nav class="menu-secundario">
         <button class="toggle-menu">Categorias</button>
         <ul class="hidden">
@@ -45,6 +46,7 @@
             <li><a href="j_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
         </ul>
     </nav>
+
     <!-- Sessão Sobre o Turismo -->
     <section id="sobre-turismo">
         <h2>Cantina Zé Ferreira</h2>
@@ -55,20 +57,32 @@
 
     <!-- Localização da Estátua -->
     <section id="localizacao-estatua">
-        <h2>Vídeo e Sua Localização</h2>
+        <h2>Fotos, Vídeo e Sua Localização</h2>
         <div class="carousel-container">
-            <div class="card-container">
-                <div class="card-1">
-                    <video controls width="100%">
-                        <source src="videos/cantina.mp4" type="video/mp4">
-                    </video>
-                    <h3></h3>
-                    <p style="font-size: 0.9em;"></p>
-                </div>
+            <div class="carousel">
+                <img src="img/cantina2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/cantina3.jpg" alt="Imagem 2">
+                <img src="img/cantina4.jpg" alt="Imagem 2">
+                <img src="img/cantina5.jpg" alt="Imagem 2">
             </div>
-        <p>A Cantina Zé Ferreira está localizada em Juazeiro do Norte, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <div class="card-container">
+            <div class="card-1">
+                <video controls width="100%">
+                    <source src="videos/cantina.mp4" type="video/mp4">
+                </video>
+                <h3></h3>
+                <p style="font-size: 0.9em;"></p>
+            </div>
+        </div>
+
+        <p>A Cantina Zé Ferreira está localizado em Juazeiro do Norte, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.3594753017655!2d-39.32016592537713!3d-7.199763492805645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a17f5431dd658b%3A0xb973229a6d54d1!2sCantina%20Z%C3%A9%20Ferreira!5e0!3m2!1spt-BR!2sbr!4v1730815426902!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+
 
     <footer>
         <div class="footer-content">

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Turismo Crajubar</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -51,21 +51,32 @@
     <section id="sobre-turismo">
         <h2>Restaurante Crato Tênis Clube</h2>
         <p>
-            #
+            Faça-nos uma visita e desfrute de um ambiente aconchegante e um cardápio recheado da melhor culinária caririense!
          </p>
     </section>
 
     <!-- Localização da Estátua -->
     <section id="localizacao-estatua">
-        <h2>Fotos e Sua Localização</h2>
+        <h2>Fotos, Vídeo e Sua Localização</h2>
         <div class="carousel-container">
             <div class="carousel">
-                <img src="img/terraco2.jpg" alt="Imagem 1">
-                <img src="img/terraco3.jpg" alt="Imagem 1">
+                <img src="img/cratotenisclube2.jpg" alt="Imagem 1" style="object-fit: cover;"> 
+                <img src="img/cratotenisclube4.jpg" alt="Imagem 1">
             </div>
             <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
             <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
         </div>
+
+        <section>
+            <div class="card-container">
+                <div class="card-1">
+                    <video controls width="100%">
+                        <source src="videos/cratotenisclube.mp4" type="video/mp4">
+                    </video>
+                    <p style="font-size: 0.9em;"></p>
+                </div>
+            </div>
+        </section>
         <p>O Restaurante Crato Tênis Clube está localizada em Crato, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0204105638477!2d-39.420246125376735!3d-7.238510592767762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1851ba5c2dd47%3A0xc710ea4e7444083!2sCrato%20Tenis%20Clube!5e0!3m2!1spt-BR!2sbr!4v1731603444690!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>

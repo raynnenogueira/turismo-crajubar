@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html">CRATO</a></li>
+            <li><a href="juazeiro.html" class="active">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav class="menu-navegacao-principal">
+        <ul>
+            <li><a href="j_pontos_religiosos.html">Locais Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="j_pontos_turisticos.html" class="active">Locais Turísticos</a></li>
+            <li><a href="j_restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="j_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav class="menu-secundario">
+        <button class="toggle-menu">Categorias</button>
+        <ul class="hidden">
+            <li><a href="j_pontos_religiosos.html">Locais Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="j_pontos_turisticos.html" class="active">Locais Turísticos</a></li>
+            <li><a href="j_restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="j_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Memorial Padre Cícero</h2>
+        <p>
+            O memorial tem como objetivo apresentar ao visitante registros da história de Juazeiro do Norte e Padre Cícero. Faz parte do acervo do museu pertences do "Padim", elementos da história e cultura da cidade. Alguns exemplos dos itens presentes no memorial é o canhão utilizado na Sedição de Juazeiro, a escrivaninha que foi utilizada pelo padre, paramentos, a rabeca, instrumento musical que pertenceu ao cego Oliveira, homem que ficou conhecido como menestrel do Padre Cícero, a máquina de datilografia e a vitrola do padre. O memorial está situado na Praça do Cinquentenário s/n, no centro de Juazeiro, foi inaugurado no dia 22 de Julho de 1988 e recentemente passou por uma reforma para a conservação das peças, obra essa que custou aproximadamente 5,9 milhões.
+            Umas das peças mais famosas do memorial é o canhão, que foi utilizado na Sedição de Juazeiro, (1914), que foi um conflito armado entre as tropas de Franco Rabelo, presidente do estado do Ceará, e as tropas reunidas em Joaseiro (antigo nome da cidade), lideradas por Floro Bartolomeu e o padre Cícero. Pesando 328 quilos, foi fabricado a partir da fundição de moedas de cobre e níquel em Fortaleza e, segundo relatos, em uma das vezes que o canhão foi disparado o tiro saiu pela culatra tão ferozmente que é possível, ainda hoje, encontrar a bala no fundo da poça.
+            Os paramentos - Fazem parte de uma das diversas formas que a igreja católica utiliza para manifestar sua fé no âmbito da igreja, as vestes sagradas. O paramento é formado por três peças e foi um presente dado pelo papa Leão XIII, quando Padre Cícero esteve em Roma no ano de 1898.
+            A biblioteca do museu apresenta vários documentos e livros raros que pertenceram ao padre Cícero. É um ótimo lugar para conhecer tanto a história de Juazeiro, quanto a do padre Cícero. O horário de funcionamento do museu é de segunda a sexta-feira de 8h as 17h, e nos finais de semana de 8h as 16h45.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/memorial.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/memorial3.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/memorial4.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/memorial5.webp" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/memorial6.jpg" alt="Imagem 1" style="object-fit: contain;">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <p>O Memorial Padre Cícero está localizada no Juazeiro do Norte, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe #></iframe>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

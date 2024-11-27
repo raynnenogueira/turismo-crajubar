@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html" class="active">CRATO</a></li>
+            <li><a href="juazeiro.html" >JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav class="menu-navegacao-principal">
+        <ul>
+            <li><a href="pontos_religiosos.html">Locais Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="pontos_turisticos.html" class="">Locais Turísticos</a></li>
+            <li><a href="restaurantes.html" >Restaurantes e Bares</a></li>
+            <li><a href="hoteis_e_pousadas.html" class="active">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav class="menu-secundario">
+        <button class="toggle-menu">Categorias</button>
+        <ul class="hidden">
+            <li><a href="pontos_religiosos.html">Locais Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="pontos_turisticos.html" class="">Locais Turísticos</a></li>
+            <li><a href="restaurantes.html" >Restaurantes e Bares</a></li>
+            <li><a href="hoteis_e_pousadas.html" class="active">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>    
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Hostel Kariri</h2>
+        <p>
+            O Kariri Hostel oferece vista do jardim, Wi-Fi gratuito e estacionamento privativo de cortesia em Crato. A propriedade oferece vista da montanha. A área de estar ao ar livre permite que você desfrute do ar fresco.
+
+            Todas as unidades dispõem de ar-condicionado, banheiro privativo e cozinha bem equipada com forno, geladeira, fogão e utensílios. Nesta hospedagem domiciliar, todas as unidades incluem roupa de cama e toalhas.
+
+            Há um bar no local.
+
+            Você pode relaxar no jardim da propriedade.
+
+            O Aeroporto de Juazeiro do Norte fica a 20 km da propriedade.
+         </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/hostel2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/hostel3.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/hostel4.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/hostel5.jpg" alt="Imagem 1" style="object-fit: contain;">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <p>O Hostel Kariri está localizada em Crato, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.020978100942!2d-39.42352259919618!3d-7.249158449624296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1850004255171%3A0x15140dfbb4e840b8!2sHostel%20Kariri!5e1!3m2!1spt-BR!2sbr!4v1732727924371!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

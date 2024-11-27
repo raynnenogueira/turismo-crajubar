@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html">CRATO</a></li>
+            <li><a href="juazeiro.html" class="active">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Museu Cívico</h2>
+        <p>
+            A casa foi moradia do sacerdote na zona urbana de Juazeiro no decorrer de sua vida. Hoje, o lugar abriga uma variedade de objetos.
+            Entretanto, dos fatos históricos relativos ao padre ocorridos naquele imóvel, o mais relevante talvez seja sua morte, tendo em vista que o mesmo teria residido ali somente alguns meses, mais especificamente, entre março e julho de 1934.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos, Vídeo e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/museu-civico.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/museu-civico-1.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/museu-civico-2.jpeg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/museu-civico-3.jpeg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/museu-civico-4.jpeg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/museu-civico-5.jpeg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/museu-civico-6.jpeg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/museu-civico-7.jpeg" alt="Imagem 1" style="object-fit: contain;">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <section>
+            <div class="card-container">
+                <div class="card-1">
+                    <video controls width="100%">
+                        <source src="videos/museucivico.mp4" type="video/mp4">
+                    </video>
+                    <p style="font-size: 0.9em;"></p>
+                </div>
+            </div>
+        </section>
+
+        <p>O Museu Cívico está localizada no Juazeiro do Norte, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.3572558969163!2d-39.32113162537716!3d-7.200017792805425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a17f55c85e3653%3A0x94780c6f2d9a7796!2sMuseu%20c%C3%ADvico%20e%20religioso%20Casa%20do%20Pe.%20C%C3%ADcero!5e0!3m2!1spt-BR!2sbr!4v1732715017335!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

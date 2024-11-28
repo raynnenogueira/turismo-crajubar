@@ -35,16 +35,16 @@
         </ul>
     </nav>
 
-    <!-- Menu de Navegação Específico do Crato -->
-    <nav class="menu-navegacao-principal">
+         <!-- Menu de Navegação Específico do Crato -->
+    <nav class="menu-secundario">
         <button class="toggle-menu">Categorias</button>
         <ul class="hidden">
             <li><a href="j_pontos_religiosos.html">Locais Religiosos</a></li> <!-- Adiciona a classe 'active' -->
             <li><a href="j_pontos_turisticos.html" class="">Locais Turísticos</a></li>
             <li><a href="j_restaurantes.html" class="active">Restaurantes e Bares</a></li>
             <li><a href="j_hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
-         </ul>
-    </nav>
+        </ul>
+    </nav>    
 
     <!-- Sessão Sobre o Turismo -->
     <section id="sobre-turismo">
@@ -56,17 +56,16 @@
 
     <!-- Localização da Estátua -->
     <section id="localizacao-estatua">
-        <h2>Vídeo e Sua Localização</h2>
+        <h2>Fotos e Sua Localização</h2>
         <div class="carousel-container">
-            <div class="card-container">
-                <div class="card-1">
-                    <video controls width="100%">
-                        <source src="videos/baiao.mp4" type="video/mp4">
-                    </video>
-                    <h3></h3>
-                    <p style="font-size: 0.9em;"></p>
-                </div>
+            <div class="carousel">
+                <img src="img/baiao2.jpeg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/baiao3.jpeg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/baiao4.jpeg" alt="Imagem 1" style="object-fit: contain;">
+
             </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
         </div>
         <p>O Baião.com está localizada em Juazeiro do Norte, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.135788707168!2d-39.33008972537686!3d-7.225348792780642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1827113400003%3A0x82c8851949415fa6!2sChurrascaria%20Bai%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1730815994699!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

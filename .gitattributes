@@ -1,2 +1,4 @@
 videos/cupim_na_brasa2.mp4 filter=lfs diff=lfs merge=lfs -text
 videos/museucivico.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text

@@ -720,11 +720,8 @@ nav ul li a.active {
 .dev-item {
     width: 250px;
     text-align: center;
-    background: #fff;
-    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .dev-foto {

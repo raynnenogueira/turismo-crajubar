@@ -31,12 +31,25 @@ body {
     height: 100%;
 }
 
+/* Ajuste para telas menores */
 @media only screen and (max-width: 768px) {
+    .header-banner {
+        background: none; /* Remove o fundo do desktop */
+    }
+
     .header-banner .overlay {
-        background: url('img/turismo-crajubar-mobile.png') no-repeat center center/cover; /* Caminho da imagem móvel */
-        height: 200px; /* Ajuste a altura para telas menores */
+        background: url('img/turismo-crajubar-mobile.png') no-repeat center center; /* Centraliza a imagem */
+        background-size: contain; /* Garante que a imagem seja exibida inteira */
+        background-position: center; /* Garante que a imagem seja centralizada */
+        /* width: %;  Ocupa toda a largura do elemento pai */
+        /* height: ;  Aumentei a altura para garantir que a imagem apareça */
+        position: relative; /* Garante que a overlay não sobreponha o menu */
+        z-index: 0; /* Define um z-index menor */
     }
 }
+
+
+
 
 
 /* Estilo do Menu */
@@ -46,6 +59,7 @@ nav {
     text-align: center;
     padding: 1rem 0;
     background-color: #f7f1e3; /* Tons de areia ou bege claro */
+    overflow: hidden; /* Evita itens flutuantes fora do menu */
 }
 
 nav ul {
@@ -66,6 +80,7 @@ nav ul li a {
     font-weight: bold;
     font-size: 1.1rem;
     padding: 5px 10px;
+    white-space: nowrap; /* Garante que o texto não quebre em várias linhas */
 }
 
 nav ul li a:hover {
@@ -79,6 +94,34 @@ nav ul li a.active {
     border-radius: 5px; /* Borda arredondada */
     padding: 5px 10px; /* Espaçamento interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do link ativo */
+}
+
+/* Estilo responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Colocar os itens em coluna */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaçamento vertical entre os itens */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Ajustar o tamanho da fonte */
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 478px) {
+    nav ul {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center;   /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espaçamento entre os itens */
+    }
 }
 
 
@@ -873,7 +916,7 @@ footer {
 .header-banner {
     position: relative;
     height: 60vh;
-    background-image: url('img/turismo-crajubar.png');
+    background-image: url('img/turismo-crajubar.png') no-repeat center center/cover;
     background-size: cover;
     background-position: center;
 }
@@ -886,13 +929,15 @@ footer {
     left: 0;
 }
 
-/* Estilo do Menu */
+/* Estilo geral do menu */
 .navigation-menu {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 1rem 0;
     background-color: #f7f1e3; /* Tons de areia ou bege claro */
+    position: relative;
+    z-index: 10; /* Define um z-index maior para o menu */
 }
 
 .menu-list {
@@ -921,6 +966,23 @@ footer {
     border-radius: 5px;
     padding: 5px 10px;
 }
+
+/* Ajuste para telas menores */
+@media (max-width: 478px) {
+    .menu-list {
+        flex-direction: column; /* Empilha os itens do menu */
+        align-items: center;
+    }
+
+    .menu-list li {
+        margin: 5px 0; /* Espaçamento vertical entre os itens */
+    }
+
+    .menu-link {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para caber melhor */
+    }
+}
+
 
 
 /* Estilo das Seções */

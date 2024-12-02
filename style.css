@@ -20,7 +20,7 @@ body {
 .header-banner {
     position: relative;
     height: 300px;
-    background: url('banner-crato.jpg') no-repeat center center/cover;
+    background: url('img/turismo-crajubar.png') no-repeat center center/cover;
 }
 
 .header-banner .overlay {
@@ -29,6 +29,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-banner .overlay {
+        background: url('img/turismo-crajubar-mobile.png') no-repeat center center/cover; /* Caminho da imagem móvel */
+        height: 200px; /* Ajuste a altura para telas menores */
+    }
 }
 
 

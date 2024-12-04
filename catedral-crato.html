@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Turismo Crajubar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com a imagem de fundo e sobreposição -->
+    <header class="header-banner">
+        <div class="overlay"></div> <!-- Camada escura de sobreposição -->
+    </header>
+
+    <!-- Menu de Navegação Principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="crato.html" class="active">CRATO</a></li>
+            <li><a href="juazeiro.html" class="">JUAZEIRO DO NORTE</a></li>
+            <li><a href="barbalha.html">BARBALHA</a></li>
+        </ul>
+    </nav>
+
+     <!-- Menu de Navegação Específico do Crato -->
+    <nav class="menu-navegacao-principal">
+        <ul>
+            <li><a href="pontos_religiosos.html" class="active">Locais Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="pontos_turisticos.html">Locais Turísticos</a></li>
+            <li><a href="restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>
+
+
+     <!-- Menu de Navegação Específico do Crato -->
+     <nav class="menu-secundario">
+        <button class="toggle-menu">Categorias</button>
+        <ul class="hidden">
+            <li><a href="pontos_religiosos.html" class="active">Locais Religiosos</a></li> <!-- Adiciona a classe 'active' -->
+            <li><a href="pontos_turisticos.html">Locais Turísticos</a></li>
+            <li><a href="restaurantes.html">Restaurantes e Bares</a></li>
+            <li><a href="hoteis_e_pousadas.html">Hotéis e Pousadas</a></li>
+        </ul>
+    </nav>    
+
+    <!-- Sessão Sobre o Turismo -->
+    <section id="sobre-turismo">
+        <h2>Paróquia Nossa Senhora da Penha | Sé Catedral de Crato</h2>
+        <p>
+            A Catedral de Nossa Senhora da Penha, no Crato, foi o primeiro templo católico da cidade, construído em 1745 pelos frades Carlos Maria de Ferrara e Fidélis de Sigmaringa, em um terreno cedido pelo capitão-mor Domingos Álvares de Matos e sua esposa. Inicialmente feita de taipa e chão batido, foi dedicada à padroeira Nossa Senhora da Penha de França.
+        </p>
+        <p>
+            Em 1817, foi inaugurada a estrutura atual, que se tornou catedral em 1914 com a criação da Diocese do Crato. A Paróquia de Nossa Senhora da Penha foi oficialmente criada em 4 de janeiro de 1768 pelo bispo Dom Francisco Xavier Aranha e instalada pelo padre José Teixeira de Azevedo.
+        </p>
+        <p>
+            Foi a segunda paróquia criada no Cariri, após a de Nossa Senhora da Luz, em Missão Velha. Apesar de seus 149 anos de existência oficial, a paróquia teve apenas 25 vigários, refletindo os longos períodos de atuação clerical no Brasil Colônia e Império, quando os párocos eram indicados pelo Estado.
+        </p>
+    </section>
+
+    <!-- Localização da Estátua -->
+    <section id="localizacao-estatua">
+        <h2>Fotos e Sua Localização</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/diocese2.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/diocese3.jpg" alt="Imagem 1" style="object-fit: contain;">
+                <img src="img/diocese4.jpg" alt=" " style="object-fit: contain;">
+                <img src="img/diocese5.jpg" alt="Imagem 1" style="object-fit: contain;">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        
+        <p>A Sé Catedral Paróquia Nossa Senhora da Penha está localizada no Crato, Ceará. Para mais detalhes, veja o mapa abaixo:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0550429562627!2d-39.415699625376746!3d-7.234562392771615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a18485740c3113%3A0x3f89698433b902b8!2sS%C3%A9%20Catedral%20Par%C3%B3quia%20Nossa%20Senhora%20da%20Penha!5e0!3m2!1spt-BR!2sbr!4v1733330335457!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turismo Crajubar. Todos os direitos reservados.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>

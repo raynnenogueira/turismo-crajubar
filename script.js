@@ -3,6 +3,8 @@ const slides = document.querySelectorAll('.carousel img');
 const totalSlides = slides.length;
 let autoSlideInterval;
 
+
+
 // Função para mudar de slide
 function showSlide(index) {
     currentIndex = (index + totalSlides) % totalSlides;
@@ -50,3 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
         menuList.classList.toggle('visible');
     });
 });
+
+// Google tag (gtag.js) 
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+    
+gtag('config', 'G-P577JWSERG');

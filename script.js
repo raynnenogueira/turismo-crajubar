@@ -1,3 +1,10 @@
+// Google tag (gtag.js) 
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P577JWSERG');
+
+
 let currentIndex = 0;
 const slides = document.querySelectorAll('.carousel img');
 const totalSlides = slides.length;
@@ -52,10 +59,3 @@ document.addEventListener('DOMContentLoaded', () => {
         menuList.classList.toggle('visible');
     });
 });
-
-// Google tag (gtag.js) 
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-    
-gtag('config', 'G-P577JWSERG');

@@ -269,6 +269,38 @@ nav ul li a.active {
     color: #555;
 }
 
+#informacoes-adicionais {
+    padding: 20px;
+    background-color: #f7f1e3;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#informacoes-adicionais .info-container {
+    display: inline-block;
+    max-width: 600px;
+}
+
+#informacoes-adicionais .info-links {
+    display: inline-flex; /* Alinha os links lado a lado */
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os links */
+    margin-top: 10px;
+}
+
+#informacoes-adicionais .info-links a {
+    font-size: 1em;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center; /* Centraliza o ícone e o texto */
+    gap: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+#informacoes-adicionais .info-links a i {
+    font-size: 1.2em;
+}
+
 
 
 /* Estilos para Pontos Turísticos */
@@ -356,18 +388,6 @@ nav ul li a.active {
     }
 }
 
-
-
-
-
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
 .card-container .card h3 {
     transition: text-shadow 0.3s ease; /* Transição suave para o efeito de sombra */
 }
@@ -376,14 +396,53 @@ nav ul li a.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do link ativo */
 }
 
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap;
+}
+
 .card {
-    width: 250px; /* Aumenta a largura do card */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Largura fixa dos cards */
+    height: 350px; /* Altura fixa dos cards */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos na vertical */
+    justify-content: space-between; /* Espaço igual entre os elementos */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    padding: 10px;
     text-align: center;
-    padding: 1rem;
+}
+
+.card img {
+    max-width: 100%; /* Ajusta a imagem à largura do card */
+    max-height: 150px; /* Define uma altura máxima */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .card-1 {
@@ -395,26 +454,6 @@ nav ul li a.active {
     width: 400px;
 }
 
-.card a {
-    text-decoration: none;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    margin: 0.8rem 0;
-    color: #333;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #555;
-}
 
 
 @media (max-width: 768px) {
